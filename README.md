@@ -1,4 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 110% Pickleball
+
+A single-page e-commerce website for 110% Pickleball, featuring higher-bounce pickleballs made from 100% recycled materials.
+
+## Features
+
+- Modern, responsive design inspired by Nike.com
+- Tailwind CSS for styling
+- Next.js for frontend development
+- Stripe integration for checkout (to be fully implemented)
+
+## Sections
+
+- Hero section showcasing the product
+- "Why Choose 110%" highlighting product benefits
+- "Who Is This For" targeting specific user groups
+- "How It Works" explaining the product's technology
+- Call-to-action with checkout functionality
 
 ## Getting Started
 
@@ -16,7 +33,21 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Stripe Integration
+
+Currently, the Stripe checkout is a placeholder. To fully implement it:
+
+1. Set up a Stripe account
+2. Create API routes for handling checkout sessions
+3. Replace the placeholder code in the Checkout component with actual Stripe integration
+
+## Technologies Used
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Stripe.js (placeholder)
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
