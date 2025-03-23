@@ -14,11 +14,14 @@ export default function Checkout({ price }: CheckoutProps) {
     setLoading(true);
 
     try {
+      // Log the price for debugging purposes
+      console.log(`Processing checkout for ${price}`);
+
       // Redirect directly to the Stripe hosted checkout page
       window.location.href = 'https://buy.stripe.com/test_7sI6p00Oybz21pK288';
     } catch (error) {
       console.error('Checkout error:', error);
-      alert('There was an error redirecting to checkout. Please try again.');
+      alert(`There was an error processing your order for ${price}. Please try again.`);
     } finally {
       setLoading(false);
     }
@@ -30,7 +33,7 @@ export default function Checkout({ price }: CheckoutProps) {
       disabled={loading}
       className="w-full bg-black ring-white ring-2 hover:bg-white hover:text-black text-white font-bold py-4 px-8 rounded-full focus:outline-none focus:shadow-outline transition-all duration-200 ease-in-out"
     >
-      {loading ? 'Processing...' : 'Buy Now'}
+      {loading ? 'Processing...' : `Buy Now - ${price}`}
     </button>
   );
 }
