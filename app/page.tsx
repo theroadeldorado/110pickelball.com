@@ -211,7 +211,7 @@ export default function Home() {
               </div>
 
               <div className="relative h-[500px] bg-gray-50 rounded-xl overflow-hidden">
-                <Image src="/images/pb.webp" alt="110% Pickleball sleeve with balls" fill style={{ objectFit: 'contain' }} className="p-8" />
+                <Image src="/images/pb.webp" alt="110% Pickleball sleeve with balls" fill style={{ objectFit: 'cover' }} />
               </div>
             </div>
           </div>
