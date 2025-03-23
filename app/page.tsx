@@ -187,21 +187,21 @@ export default function Home() {
         <section id="buy" className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">Protect your game</h2>
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6">Elevate your game</h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                As a pickleball player, your equipment is at the center of your game. Keep your pickleballs performing at 110% with our specialized sleeves that match in quality and looks.
+                As a pickleball player, the quality of your equipment makes all the difference. Experience the advantage of 110% Pickleballs with our premium 3-pack sleeve.
               </p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">Minimal and thoughtful</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">Premium 3-Pack</h3>
                 <p className="text-lg text-gray-600 mb-6">
-                  Our pickleball sleeve is compact and precisely fits 3 balls. The zipper allows you to access the interior with ease, and the front pouch provides a convenient place for your
-                  accessories or scoring device.
+                  Each sleeve contains 3 of our high-performance pickleballs, designed to give you that extra 10% bounce. Perfect for players of all ages and skill levels who want to enhance their
+                  playing experience.
                 </p>
                 <div className="bg-black text-white p-8 rounded-xl">
-                  <h3 className="text-2xl font-bold mb-4">Get Your Sleeve Today!</h3>
+                  <h3 className="text-2xl font-bold mb-4">Get Your 3-Pack Today!</h3>
                   <p className="text-xl mb-6">Limited Launch Price: $19.99</p>
                   <div className="max-w-xs">
                     <Checkout price="$19.99" />
@@ -211,7 +211,7 @@ export default function Home() {
               </div>
 
               <div className="relative h-[500px] bg-gray-50 rounded-xl overflow-hidden">
-                <Image src="/images/pb.webp" alt="110% Pickleball sleeve with balls" fill style={{ objectFit: 'cover' }} />
+                <Image src="/images/pb.webp" alt="110% Pickleball 3-pack of balls" fill style={{ objectFit: 'cover' }} />
               </div>
             </div>
           </div>
