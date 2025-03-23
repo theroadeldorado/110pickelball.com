@@ -28,12 +28,13 @@ export default function Checkout({ price }: CheckoutProps) {
   };
 
   return (
-    <button
-      onClick={handleCheckout}
-      disabled={loading}
+    <a
+      href="https://buy.stripe.com/test_7sI6p00Oybz21pK288"
+      target="_blank"
+      rel="noopener noreferrer"
       className="w-full bg-black ring-white ring-2 hover:bg-white hover:text-black text-white font-bold py-4 px-8 rounded-full focus:outline-none focus:shadow-outline transition-all duration-200 ease-in-out"
     >
       {loading ? 'Processing...' : 'Buy Now'}
-    </button>
+    </a>
   );
 }
