@@ -213,8 +213,8 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <div className="flex justify-center items-center">
-                <span className="text-2xl font-bold text-black">110%</span>
-                <span className="ml-1 text-2xl font-light text-black">Pickleball</span>
+                <span className="text-2xl font-black text-black">110%</span>
+                <span className="text-2xl font-light text-black">Pickleball</span>
               </div>
               <p className="mt-4 text-gray-600">More Bounce. More Fun. Less Strain.</p>
               <p className="mt-8 text-sm text-gray-500">© 2025 110% Pickleball. All rights reserved.</p>
