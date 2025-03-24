@@ -10,8 +10,6 @@ export default function Home() {
   // Image paths for sliders and hero sections
   const heroImages = ['/images/Pickleball Picture (4).jpg', '/images/Pickleball Picture (7).jpg', '/images/Pickleball Picture (10).jpg'];
 
-  const featureImages = ['/images/Pickleball Picture.jpg', '/images/Pickleball Picture (1).jpg', '/images/Pickleball Picture (2).jpg', '/images/Pickleball Picture (3).jpg'];
-
   const testimonialImages = ['/images/Pickleball Picture (11).jpg', '/images/Pickleball Picture (12).jpg', '/images/Pickleball Picture (13).jpg'];
 
   const productImages = ['/images/Pickleball Picture (5).jpg', '/images/Pickleball Picture (6).jpg', '/images/Pickleball Picture (8).jpg', '/images/Pickleball Picture (9).jpg'];
