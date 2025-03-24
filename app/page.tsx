@@ -23,14 +23,14 @@ export default function Home() {
         {/* Hero Section with Full-width Image Slider */}
         <section className="relative">
           <ImageSlider images={heroImages} height={700} fullWidth={true} interval={6000} className="mt-16" />
-          <div className="absolute inset-0 z-20 flex flex-col justify-center items-start px-4 sm:px-6 lg:px-8 lg:ml-20">
-            <div className="max-w-xl space-y-5 bg-black/30 p-8 rounded-lg backdrop-blur-sm">
+          <div className="absolute inset-0 z-20 flex flex-col items-start justify-end mb-12 md:mb-0 md:justify-center md:items-start px-4 sm:px-6 lg:px-8 lg:ml-20">
+            <div className="md:max-w-xl space-y-5 bg-black/30 p-4 md:p-8 rounded-lg backdrop-blur-xs md:backdrop-blur-sm">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white">110% Pickleball</h1>
-              <p className="text-xl md:text-2xl font-light text-white">More Bounce. More Fun. Less Strain.</p>
-              <p className="text-white text-base md:text-lg">
+              <p className="text-xl md:text-2xl hidden md:block font-light text-white">More Bounce. More Fun. Less Strain.</p>
+              <p className="text-white  text-base md:text-lg">
                 The first pickleballs designed to bounce 10% higher than standard balls. Perfect for older players, softer courts, and anyone who wants a better game.
               </p>
-              <div className="pt-4">
+              <div className="pt-4 hidden md:block">
                 <Button href="#buy">Get your 3-pack sleeve today!</Button>
               </div>
             </div>
@@ -47,12 +47,12 @@ export default function Home() {
               {[
                 { title: 'Higher Bounce', description: 'Less bending, more playing.' },
                 { title: 'Eco-Friendly', description: 'Made entirely from recycled materials.' },
-                { title: 'Great for All Surfaces', description: 'Performs better on softer courts and in colder weather.' },
+                { title: 'All Surfaces', description: 'Performs better on softer courts and in colder weather.' },
                 { title: 'Easier on Joints', description: 'Reduces strain for players of all ages.' },
               ].map((feature, index) => (
                 <div key={index} className="bg-white p-8 rounded-xl shadow-sm">
-                  <div className="flex items-center mb-4 text-green-500">
-                    <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <div className="flex items-start mb-4 text-green-700">
+                    <svg className="w-6 h-6 mr-2 mt-0.5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                       <path
                         fillRule="evenodd"
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
@@ -64,10 +64,6 @@ export default function Home() {
                   <p className="text-gray-600">{feature.description}</p>
                 </div>
               ))}
-            </div>
-
-            <div className="mt-16">
-              <ImageSlider images={featureImages} height={400} showIndicators={true} interval={4000} />
             </div>
           </div>
         </section>
@@ -111,15 +107,14 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-8">Who Is This For?</h2>
             <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12">Our pickleballs are designed to enhance the game for a variety of players in different settings.</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 mx-auto lg:max-w-4xl">
               {[
-                { icon: '🎾', title: 'Older Players', description: 'Spend more time playing, less time picking up balls.' },
-                { icon: '🌿', title: 'Eco-Conscious Athletes', description: 'Support sustainability without sacrificing performance.' },
-                { icon: '🏡', title: 'Backyard & Indoor Players', description: 'Better bounce on carpets, tile, and soft surfaces.' },
-                { icon: '🥇', title: 'Trainers & Beginners', description: 'More consistent bounces help improve skills faster.' },
+                { title: 'Older Players', description: 'Spend more time playing, less time picking up balls.' },
+                { title: 'Eco-Conscious Athletes', description: 'Support sustainability without sacrificing performance.' },
+                { title: 'Backyard & Indoor Players', description: 'Better bounce on carpets, tile, and soft surfaces.' },
+                { title: 'Trainers & Beginners', description: 'More consistent bounces help improve skills faster.' },
               ].map((persona, index) => (
                 <div key={index} className="flex bg-white p-6 rounded-xl shadow-sm">
-                  <div className="text-4xl mr-4">{persona.icon}</div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">{persona.title}</h3>
                     <p className="text-gray-600">{persona.description}</p>
@@ -138,6 +133,9 @@ export default function Home() {
         <section id="how" className="py-16 bg-gray-50 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="rounded-xl overflow-hidden">
+                <ImageSlider images={productImages} height={400} interval={4500} />
+              </div>
               <div className="space-y-6">
                 <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-black">How It Works</h2>
                 <p className="text-lg text-gray-700">
@@ -176,9 +174,6 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="rounded-xl overflow-hidden">
-                <ImageSlider images={productImages} height={400} interval={4500} />
-              </div>
             </div>
           </div>
         </section>
@@ -200,17 +195,13 @@ export default function Home() {
                   Each sleeve contains 3 of our high-performance pickleballs, designed to give you that extra 10% bounce. Perfect for players of all ages and skill levels who want to enhance their
                   playing experience.
                 </p>
-                <div className="bg-black text-white p-8 rounded-xl">
-                  <h3 className="text-2xl font-bold mb-4">Get Your 3-Pack Today!</h3>
-                  <p className="text-xl mb-6">Limited Launch Price: $19.99</p>
-                  <div className="max-w-xs">
-                    <Checkout price="$19.99" />
-                  </div>
-                  <p className="text-gray-400 text-sm mt-4">Free shipping on orders over $35.</p>
+
+                <div className="max-w-xs pointer-events-none opacity-50 cursor-not-allowed">
+                  <Checkout price="$19.99" />
                 </div>
               </div>
 
-              <div className="relative h-[500px] bg-gray-50 rounded-xl overflow-hidden">
+              <div className="relative h-[300px] bg-gray-50 rounded-xl overflow-hidden">
                 <Image src="/images/pb.webp" alt="110% Pickleball 3-pack of balls" fill style={{ objectFit: 'cover' }} />
               </div>
             </div>
