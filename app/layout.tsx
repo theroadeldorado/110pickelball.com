@@ -13,20 +13,22 @@ const geistMono = Geist_Mono({
 });
 
 // Define base URL for absolute URLs
-const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` : 'http://localhost:3000';
+const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` : process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
 export const metadata: Metadata = {
-  title: '110% Pickleball - More Bounce. More Fun. Less Strain.',
-  description: 'The first pickleballs designed to bounce 10% higher than standard balls. Perfect for older players, softer courts, and anyone who wants a better game.',
+  title: '110% Pickleball - Built to bounce above the rest',
+  description:
+    'The first pickleballs scientifically validated to deliver approximately 10% more bounce than conventional balls. Crafted using advanced polymer science for consistently dynamic performance on every surface.',
   openGraph: {
-    title: '110% Pickleball - More Bounce. More Fun. Less Strain.',
-    description: 'The first pickleballs designed to bounce 10% higher than standard balls.',
+    title: '110% Pickleball - Built to bounce above the rest',
+    description:
+      'The first pickleballs scientifically validated to deliver approximately 10% more bounce than conventional balls. Crafted using advanced polymer science for consistently dynamic performance on every surface.',
     images: [
       {
-        url: `${baseUrl}/images/share.jpg`,
+        url: 'https://100-pickleball.com/images/share.jpg',
         width: 1200,
         height: 630,
-        alt: '110% Pickleball product image',
+        alt: '110% Pickleball - Built to bounce above the rest',
       },
     ],
     locale: 'en_US',
@@ -35,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '110% Pickleball - More Bounce. More Fun. Less Strain.',
-    description: 'The first pickleballs designed to bounce 10% higher than standard balls.',
-    images: [`${baseUrl}/images/share.jpg`],
+    title: '110% Pickleball - Built to bounce above the rest',
+    description: 'The first pickleballs scientifically validated to deliver approximately 10% more bounce than conventional balls.',
+    images: ['https://100-pickleball.com/images/share.jpg'],
     creator: '@110pickleball',
   },
   icons: {
