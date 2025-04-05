@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 export default function Home() {
   // Image paths for sliders and hero sections
-  const heroImages = ['/images/Pickleball Picture (4).jpg', '/images/Pickleball Picture (7).jpg', '/images/Pickleball Picture (10).jpg'];
+  const heroImages = ['/images/Pickleball Picture (4).jpg', '/images/Pickleball Picture (2).jpg', '/images/Pickleball Picture (10).jpg'];
 
   return (
     <>
