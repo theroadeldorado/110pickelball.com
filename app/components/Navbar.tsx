@@ -16,17 +16,17 @@ export default function Navbar() {
           </div>
           <div className="hidden md:flex items-center">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link href="#shop" className="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium">
-                Shop
-              </Link>
               <Link href="#why" className="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium">
-                Why 110%
+                Performance
               </Link>
-              <Link href="#who" className="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium">
-                Who It&apos;s For
+              <Link href="#surfaces" className="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium">
+                Court Surfaces
               </Link>
-              <Link href="#how" className="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium">
-                How It Works
+              <Link href="#rd" className="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium">
+                R&D & Testing
+              </Link>
+              <Link href="#buy" className="text-gray-700 hover:text-black px-3 py-2 text-sm font-medium">
+                Shop
               </Link>
             </div>
           </div>
