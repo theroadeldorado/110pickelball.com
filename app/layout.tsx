@@ -12,9 +12,6 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-// Define base URL for absolute URLs
-const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` : process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
-
 export const metadata: Metadata = {
   title: '110% Pickleball - Built to bounce above the rest',
   description:
@@ -26,14 +23,14 @@ export const metadata: Metadata = {
       'The first pickleballs scientifically validated to deliver approximately 10% more bounce than conventional balls. Crafted using advanced polymer science for consistently dynamic performance on every surface.',
     images: [
       {
-        url: '/facebook-image.png',
+        url: '/opengraph-image.jpg',
         width: 1200,
         height: 630,
       },
     ],
+    siteName: '110% Pickleball',
     locale: 'en_US',
     type: 'website',
-    siteName: '110% Pickleball',
   },
   icons: {
     icon: [
@@ -53,7 +50,7 @@ export const metadata: Metadata = {
     ],
   },
   themeColor: '#000000',
-  metadataBase: new URL(baseUrl),
+  metadataBase: new URL('https://110pickleball.com'),
 };
 
 export default function RootLayout({
