@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       'The first pickleballs scientifically validated to deliver approximately 10% more bounce than conventional balls. Crafted using advanced polymer science for consistently dynamic performance on every surface.',
     images: [
       {
-        url: 'https://100-pickleball.com/images/share.jpg',
+        url: 'https://100pickleball.com/images/share.jpg',
         width: 1200,
         height: 630,
         alt: '110% Pickleball - Built to bounce above the rest',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '110% Pickleball - Built to bounce above the rest',
     description: 'The first pickleballs scientifically validated to deliver approximately 10% more bounce than conventional balls.',
-    images: ['https://100-pickleball.com/images/share.jpg'],
+    images: ['https://100pickleball.com/images/share.jpg'],
     creator: '@110pickleball',
   },
   icons: {
