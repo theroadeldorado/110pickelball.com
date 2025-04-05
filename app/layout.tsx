@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'The first pickleballs designed to bounce 10% higher than standard balls.',
     images: [
       {
-        url: '/images/share.jpg',
+        url: `${baseUrl}/images/share.jpg`,
         width: 1200,
         height: 630,
         alt: '110% Pickleball product image',
@@ -31,12 +31,13 @@ export const metadata: Metadata = {
     ],
     locale: 'en_US',
     type: 'website',
+    siteName: '110% Pickleball',
   },
   twitter: {
     card: 'summary_large_image',
     title: '110% Pickleball - More Bounce. More Fun. Less Strain.',
     description: 'The first pickleballs designed to bounce 10% higher than standard balls.',
-    images: ['/images/share.jpg'],
+    images: [`${baseUrl}/images/share.jpg`],
     creator: '@110pickleball',
   },
   icons: {

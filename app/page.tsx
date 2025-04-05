@@ -122,7 +122,7 @@ export default function Home() {
                 <span className="text-2xl font-light text-black">Pickleball</span>
               </div>
               <p className="mt-4 text-gray-600">Performance You Can Feel</p>
-              <p className="mt-8 text-sm text-gray-500">© 2025 110%Pickleball. All rights reserved.</p>
+              <p className="mt-8 text-sm text-gray-500">© 2025 110% Pickleball. All rights reserved.</p>
             </div>
           </div>
         </footer>
